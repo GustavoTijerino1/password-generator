@@ -10,7 +10,7 @@ var passwordCharacterCount;
 function askAboutCharacterLength(){
   
   while(true) {
-    passwordCharacterCount = prompt("How many characters do you want in your Password?");
+    passwordCharacterCount = prompt("Choose a lenght of 8 or 128 characters for Password.");
 
     if (passwordCharacterCount >= 8 && passwordCharacterCount <= 128) {
       break;

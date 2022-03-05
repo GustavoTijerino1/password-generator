@@ -23,3 +23,7 @@ https://www.w3schools.com/js/js_comparisons.asp
 ![Screenshot of my final page.](./finalProduct.png)
 
 ## Links
+
+[Github pages](https://github.com/GustavoTijerino1/password-generator)
+
+[Official Website](https://gustavotijerino1.github.io/password-generator/)
