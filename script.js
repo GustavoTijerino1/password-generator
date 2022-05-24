@@ -10,7 +10,7 @@ var passwordCharacterCount;
 function askAboutCharacterLength(){
   
   while(true) {
-    passwordCharacterCount = prompt("Choose a lenght of 8 or 128 characters for Password.");
+    passwordCharacterCount = prompt("Choose a length of 8 or 128 characters for Password.");
 
     if (passwordCharacterCount >= 8 && passwordCharacterCount <= 128) {
       break;
@@ -34,13 +34,13 @@ function generatePassword(){
  passwordCharacterCount =askAboutCharacterLength()
 
   while(true) {
-   allowUppercase = confirm("Are Upper Case Allowed?");
+   allowUppercase = confirm("Are Upper Case Characters Allowed?");
 
   if (allowUppercase) {
     mergelist.push(upper.join(""));
    } 
  
-  allowLowerCase = confirm("Are Lower Case Allowed?");
+  allowLowerCase = confirm("Are Lower Case Characters Allowed?");
     if (allowLowerCase) {
       mergelist.push(lower.join(""));
     }
@@ -59,12 +59,12 @@ function generatePassword(){
     if ( allowUppercase  || allowLowerCase|| allowNumbers || allowSpecials) {
       break;
     } else  {
-      alert ("Please choose a character type.")
+      alert ("Please choose a character type.");
     }
 
   } 
   // Its the loop that generates a random pasword
-  console.log(mergelist)
+  console.log(mergelist);
   for (var i=1; i<=passwordCharacterCount; i++ ) {
     var randomSet = Math.floor(Math.random() * mergelist.length)
     var randomString = mergelist[randomSet]
@@ -86,6 +86,6 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword());
 
 
